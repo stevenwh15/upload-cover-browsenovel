@@ -1,0 +1,21 @@
+{
+  "name": "cover-bn-scripts",
+  "version": "1.0.0",
+  "description": "Upload, verify, and delete novel cover images on Cloudflare Images",
+  "type": "commonjs",
+  "scripts": {
+    "upload:sample": "node scripts/upload.js",
+    "upload:all": "node scripts/upload.js --all",
+    "upload:retry": "node scripts/upload.js --retry-failed",
+    "delete": "node scripts/delete.js",
+    "verify": "node scripts/verify.js",
+    "verify:live": "node scripts/verify.js --live",
+    "scrape:covers": "node scripts/scrape-covers.js"
+  },
+  "dependencies": {
+    "@dsnp/parquetjs": "^1.8.6",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "form-data": "^4.0.0"
+  }
+}
