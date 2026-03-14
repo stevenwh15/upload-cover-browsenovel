@@ -1,5 +1,5 @@
 data/
 .env
 node_modules/
-*.csv
+upload-failed-updated.csv
 .DS_Store
